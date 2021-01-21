@@ -1,0 +1,29 @@
+aroma 900 - 980 / .92
+baby-massage 377 - 529 / .71
+cake 916 - 980 / .93
+child2 900 - 880 / 1
+clothes 800 - 800 / 1
+courses 800 - 800 / 1
+dancing 168 - 203 / .83
+decoration 260 - 247 / 1.05
+doll 444 - 630 / .71
+gifts 450 - 520 / .71
+health 900 - 980 / .92
+leading 300 - 300 / 1
+lessons 800 - 800 / 1
+massage 512 - 512 /1
+mother 165 - 199 / .83
+music 900 - 900 / 1
+other 900 - 900 / 1
+painting 626 - 626 / 1
+photo 33 -33 / 1
+psi 125 - 142 / .88
+registration 981 - 932 / 1.05
+still 980 - 840 / 1.17
+sweets 260 266 / .98
+teta 900 - 728 / 1.24
+training 900 - 980 / .92
+wedding 900 - 980 / .92
+wedding-dress 800 - 800 / 1
+yoga 842 - 980 / .86
+

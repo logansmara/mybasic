@@ -1,0 +1,47 @@
+.blog-block1  {
+	margin-bottom: 50px;
+}
+/* Адаптивная вставка видео с Youtube
+https://html5book.ru/adaptivnoe-video/ --> */
+.thumb-wrap {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  height: 0;
+  overflow: hidden;
+  background-color: gray;
+}
+.thumb-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
+}
+/* иконки Поделиться в соцсетях */
+.blog-block1 .ya-share2 {
+  margin: 15px 0;
+}
+
+.blog-block1 h1 {
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 32px;
+}
+.blog-block1 p.p-blog-block1 {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: Roboto-Regular, sans-serif;
+}
+/*
+В blog.php
+div class="row <?= $blog->category; ?>"
+*/
+.video {
+  color: green;
+}
+
+.video h1 {
+  font-size: 32px;
+}

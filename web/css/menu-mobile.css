@@ -1,0 +1,103 @@
+@media(max-width:767px) {
+	#bar {
+		display: none;
+	}
+	.submenu-ul-mobile {
+		display: none;
+	}
+}
+#menu-mobile {
+	1background-color: #1a6aaa;
+	1background-color: #333;
+	background-color: #3d5395;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+}
+.submenu-ul-mobile {
+	margin: 0;
+	padding: 0 0 12px 0;
+	font: bold 14px Arial, sans-serif; 
+	border-top: 1px solid rgba(255,255,255,.2);
+}
+
+.submenu-ul-mobile li {
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+}
+.submenu-ul-mobile a {
+	padding: 10px 10px 10px 30px; 
+	text-decoration:none;
+	display: block;
+	color: #ddd; 
+	border-bottom: 1px solid rgba(255,255,255,.1);
+	position: relative;
+	/* мои стили */
+	1background: red;
+}
+
+.submenu-ul-mobile ul a {
+	1background: cyan;
+}
+
+.submenu-ul-mobile ul a span {
+	color: #ccc;
+}
+/* стиль dcjq-parent  */
+.submenu-ul-mobile a.dcjq-parent,
+.submenu-ul-mobile a.dcjq-parent:hover {
+	1background: green;
+}
+
+.submenu-ul-mobile a.dcjq-parent.active {}
+.submenu-ul-mobile a .dcjq-icon {
+	position: absolute; top: 50%; left: 14px; width: 34px; 
+	margin-top: -17px; height: 34px; 
+	background: url(/images/menu-mobile/arrow_black_right.png) no-repeat 0 center;
+}
+
+.submenu-ul-mobile a.dcjq-parent.active .dcjq-icon {
+	background: url(/images/menu-mobile/arrow_black_down.png) no-repeat 0 center;
+}
+.submenu-ul-mobile a:hover {
+	1background: #232323;
+	color: #fff;
+}
+.submenu-ul-mobile a:active{}
+
+/**/
+.ul-category {
+	padding-left: 18px;
+}
+
+/**/
+#menu-mobile .hamburger {
+	padding:15px 15px 10px 15px;
+}
+#menu-mobile .hamburger.is-active .hamburger-inner,
+#menu-mobile .hamburger.is-active .hamburger-inner::before,
+#menu-mobile .hamburger.is-active .hamburger-inner::after {
+    background-color: #fff;
+}
+#menu-mobile .hamburger-inner,
+#menu-mobile .hamburger-inner::before,
+#menu-mobile .hamburger-inner::after {
+	background-color: #fff;
+}
+/* owl-space.ru в шапке мобильного меню */
+.mobile-shapka-home {
+	display: block;
+    margin-top: 12px;
+    font-size: 24px;
+    text-align: center;
+}
+.mobile-shapka-home, .mobile-shapka-home:visited {
+    color: #fff;
+}
+.mobile-shapka-home:hover, .mobile-shapka-home:active {
+    color: rgba(255,255,255,.8);
+}

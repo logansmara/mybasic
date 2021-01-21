@@ -1,0 +1,27 @@
+.container-fixed {
+  position: relative;
+}
+.fixed-menu {
+
+}
+.position-fixed {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.right1 {
+  float: right;
+  width: calc(100% - 65px);
+  transition: all .3s ease;
+  overflow: hidden;
+  background-color: #fff;
+}
+.right1.out {
+  transform: translateY(-100%);
+}
+/* при затемнении страницы убираем background */
+.right1.dark {
+	display: none;
+}

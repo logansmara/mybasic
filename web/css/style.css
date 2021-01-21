@@ -1,0 +1,181 @@
+body {
+  background-repeat: repeat-y;
+  background-position: center top;
+}
+* {
+    outline: none;
+}
+h4,p,span {
+  font-family: Roboto-Regular, sans-serif;
+}
+a,a:hover,a:visited,a:active {
+	text-decoration: none;
+}
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/* подключаем шрифты */
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('/fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: Lora-Regular;
+    src: url('/fonts/Lora-Regular.ttf');
+}
+
+/* Второе нижнее меню на большом экране */
+.second-menu-desctop {
+    padding-bottom: 10px;
+    1border-bottom: 1px solid #ddd;
+}
+.second-menu-left {
+    font-weight: bold;
+    display: inline-block;
+    line-height: 1.1;
+    font-size: 20px;
+    margin: 10px 0 0 10px;
+    margin-top: 20px;
+}
+ul.second-menu-right-ul {
+    float: right;
+}
+ul.second-menu-right-ul li {
+    display: inline-block;
+}
+.second-menu-right-ul-1 {
+    padding-top: 15px;
+    padding-top: 25px;
+}
+.second-menu-right-ul-1 li a {
+    color: #999;
+    font-size: 14px;
+    font-family: Roboto-Regular, sans-serif;
+    margin-right: 10px;
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
+}
+.second-menu-right-ul-1 li a:hover {
+    color: #c82502;
+}
+.second-menu-right-ul-2 {
+    padding-top: 15px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.second-menu-right-ul-2 li a {
+    color: #333;
+    font-size: 16px;
+    font-family: Roboto-Regular, sans-serif;
+    margin-right: 10px;
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;  
+}
+.second-menu-right-ul-2 li a:hover {
+	color: #c82502;
+}
+/* хлебные крошки */
+.breadcrumb {
+	background-color: inherit;
+	padding: 10px 0 !important;
+	margin-bottom: 0;
+}
+.breadcrumbs1 {
+    padding-left: 20px;
+}
+.content-q {
+    min-height: 95vh;
+}
+@media (max-width: 767px) {
+    .content-q {
+	    margin: 60px auto 0 auto;
+    }
+    .second-menu-desctop {
+    	display: none;
+    }
+}
+@media (min-width: 768px) {
+	.content-q {
+	  width: calc(100% - 65px);
+	  float: right;
+    padding-bottom: 80px;
+  }
+}
+
+/* Яндекс Поиск по сайту*/
+.yandex-search-fixed {
+  display: none;
+  position: fixed;
+  top: 0;bottom: 0;left: 0;right: 0;
+  background-color: rgba(245,245,245,.95);
+  z-index: 999;
+}
+/* крестик закрытия меню */
+.close-search {
+  margin: 20px 10px 0 0;
+  float: right;
+}
+.close-search span {
+  display: block;
+  margin: 20px;
+  width: 18px;
+  height: 18px;
+  background-image: url(close-black.png);
+  background-size: 100%;
+  cursor: pointer;
+}
+.container .ya-site-form input {
+   height: 32px;
+}
+
+/* Надпись - Показаны 1-10 из 30 записей */
+.summary {
+  color: transparent;
+}
+
+.ias-trigger a {
+  color: #c82502;
+  border: 2px solid #c82502;
+  padding: 10px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  text-transform: uppercase;
+}
+.ias-trigger a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #c82502;
+}
+/* надпись - Вы достигли конца */
+.ias-noneleft {
+  padding-bottom: 30px;
+  text-align: center;
+  width: 100%;
+  clear: both;
+}
+/* этот тег я сам придумал */
+.ias-noneleft iasend {
+  background-color: #c82502;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* добавления стилей при скролле */
+.content-scroll {
+  margin-top: 80px;
+}
+@media (max-width: 767px) {
+	.ias-trigger a {
+	  border: none;
+	  margin-top: 40px;
+	  display: block;
+	}
+	.ias-noneleft iasend {
+	  display: block;
+	  margin-top: 40px;
+	  background-color: #fff;
+      color: #c82502;
+    }
+}

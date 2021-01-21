@@ -1,0 +1,23 @@
+-Скопировать таблицу author1
+
+-В файле modules/admin/controllers AuthorsController.php скопировать и добавить:
+use app\models\Author1;
+    public function actionAuthor1()
+    {
+    	$articles = Author1::find()->where(['moderator' => '1'])->all();
+        return $this->render('author1',compact('articles'));
+    }
+
+    public function actionArticle1($id)
+    {
+    	$article = Author1::findOne($id);
+        return $this->render('article1',compact('article'));
+    }
+
+-Создать папку в папке authors
+
+-Скопировать в папке modules/admin/models Author1Image.php и внести изменения
+
+-Скопировать в папке modules/admin/controllers Author1Controller.php и внести изменения
+
+-Скопировать в папке modules/admin/views папку author1 и внести изменения

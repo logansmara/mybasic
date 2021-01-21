@@ -1,0 +1,208 @@
+.absolut-vertical {
+	  position: absolute;
+	  top: 0;
+	  left: 15px;
+      z-index: 10;
+}
+#main-vertical {
+	  float: left;
+	  width: 60px;
+	  min-height: calc(100vh - 53px);
+      min-height: 100vh;
+	  margin-left: -15px;
+	  position: relative;
+}
+#main-vertical ul {
+	  margin: 20px 30px;
+	  border-bottom: 1px solid #ccc;
+}
+#main-vertical ul li {
+    padding: 0 0 20px 0;
+}
+#main-vertical ul.submenu-vertical-ul-first li a {
+    color: #333;
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
+}
+#main-vertical ul.submenu-vertical-ul-first li a:hover {
+    color: #c82502;
+}
+#main-vertical ul.submenu-vertical-ul-second li a {
+	  color: #999;
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
+}
+#main-vertical ul.submenu-vertical-ul-second li a:hover {
+    color: #c82502;
+}
+/* кнопка Меню*/
+a.js-click-knopka-vertical {
+    display: block;
+    outline:0 none;
+    width: 60px;
+    height: 54px;
+    padding-left: 20px;
+    padding-top: 17px;
+    cursor: pointer;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.rotate90deg {
+    -moz-transform: rotate(90deg); /* Для Firefox */
+    -ms-transform: rotate(90deg); /* Для IE */
+    -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(90deg); /* Для Opera */
+    transform: rotate(90deg);
+}
+/* кнопка Поиск */
+a.search1 {
+    display: block;
+    width: 60px;
+    height: 54px;
+    padding-left: 20px;
+    padding-top: 17px;
+}
+/* Кнопка VK */
+a.vk1 {
+    display: block;
+    width: 60px;
+    height: 54px;
+    padding-left: 14px;
+    padding-top: 13px;
+}
+a.vk1 span {
+    1border: 1px solid red;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(data:image/png;base64,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);
+}
+/*
+нижняя полоса при затемненном экране (без класса knopka-vertical)
+*/
+.knopka-menu {
+    border-bottom: 1px solid #777;
+    -webkit-transition: all .75s;
+    transition: all .75s;
+}
+/*
+нижняя полоса в обычном состоянии
+(при условии, что оба класса есть у diva)
+При клике на боковое меню класс knopka-vertical убирается
+*/
+div.knopka-menu.knopka-vertical {
+    border-bottom: 1px solid #ccc;
+}
+.main-vertical-color-click {
+    background: none;
+} 
+@media (max-width: 767px) {
+	#main-vertical {
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	.main-vertical-color {
+	    1background-image: url(bg-vertical-menu.png);
+	    background-repeat: repeat-y;
+    }
+}
+/**/
+#main-vertical .hamburger {
+	  padding: 15px 10px;
+}
+#main-vertical .hamburger.is-active .hamburger-inner,
+#main-vertical .hamburger.is-active .hamburger-inner::before,
+#main-vertical .hamburger.is-active .hamburger-inner::after {
+    background-color: #555;
+}
+#main-vertical .hamburger-inner,
+#main-vertical .hamburger-inner::after,
+#main-vertical .hamburger-inner::before{
+	  background-color:#555;
+}
+/* затемнение страницы при открытии бокового меню */
+.submenu-vertical-fixed {
+	display: none;
+	background: rgba(50, 50, 50, 0.5);
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* боковое меню */
+/*
+.submenu-vertical {
+      
+      1z-index: 4;
+}
+*/
+.submenu-vertical-ul {
+    display: none;
+	  overflow: auto;
+	  background-color: #fff;
+	  position: absolute;
+	  left: 60px;
+	  top: 0;
+	  min-width: 30vw;
+	  height: 100%;
+      z-index: 15;
+}
+.submenu-vertical-ul ul {
+	  list-style: none;
+}
+/* стилизация полосы прокрутки бокового меню */
+.submenu-vertical-ul::-webkit-scrollbar {
+	width: 14px;
+	background-color: inherit;
+}
+.submenu-vertical-ul::-webkit-scrollbar-thumb {
+	width: 14px;
+	background-color: #ddd;
+}
+.submenu-vertical-ul::-webkit-scrollbar-thumb:hover {
+	background-color: #ccc;
+}
+.submenu-vertical-ul::-webkit-scrollbar-track {
+	1border: 1px solid blue;
+	1background-color: yellow;
+	1background-color: #f8f8f8;
+}
+/* Включите одну кнопку вверху и внизу внизу */
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+}
+
+/* Выключите область сверху вниз и область снизу вверх */
+::-webkit-scrollbar-button:vertical:start:increment,
+::-webkit-scrollbar-button:vertical:end:decrement {
+    display: none;
+}
+
+/* Кнопка прокрутки Вниз */
+::-webkit-scrollbar-button:end:increment {
+    background-image: url(scroll_cntrl_dwn_2.png);
+}
+
+/* Кнопка прокрутки Вверх */
+::-webkit-scrollbar-button:start:decrement {
+    background-image: url(scroll_cntrl_up_2.png);
+}
+/* крестик закрытия меню */
+.close2 {
+  margin: 10px 10px 0 0;
+  float: right;
+}
+.close2 span {
+	display: block;
+  margin: 20px;
+  width: 18px;
+  height: 18px;
+  background-image: url(close-black.png);
+  background-size: 100%;
+}

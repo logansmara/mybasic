@@ -1,0 +1,22 @@
+.vk-groups {
+}
+.vk-groups h1.h1-vk-groups {
+  font-size: 32px;
+  color: #444;
+  margin-bottom: 20px;
+}
+a.vk-group-a {
+  display: block;
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.vk-group-a img {
+  border-radius: 25px;
+  float: left;
+}
+p.vk-group-p {
+  margin: 5px 0 0 70px;
+}

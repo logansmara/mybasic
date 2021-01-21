@@ -1,0 +1,157 @@
+#div-bar {
+1background-color: #333;
+  background-color: #3d5395;
+1background-color: #006699;
+  font-size: 16px;
+  1padding: 3px 0 0 0;
+  overflow: hidden;
+  1height: 33px;
+}
+@media(max-width:767px) {
+  /* .vk-desctop {
+    display: none;
+  } */
+}
+@media(min-width:768px) {
+  #menu-mobile {
+    display: none;
+  }
+  #bar {
+    display: block;
+  }
+  #div-bar {
+    position: fixed;
+    z-index: 2000;
+    top: 0;left: 0;right: 0;
+  }
+}
+  /* стрелка вниз у меню */
+  li.menu-click > a > span {
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+    border:2px solid #fff;
+    border-right-width:0;
+    border-top-width:0;
+    -ms-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    margin-bottom: 3px;
+  }
+  /* стрелка вверх у меню */
+  #bar li.menu-active > a > span {
+    border:2px solid #fff;
+    border-left-width:0;
+    border-bottom-width:0;
+    margin-bottom: 0;
+  }
+#bar {
+  list-style: none;
+  margin: 0 auto;
+}
+
+#bar > li {
+  float: left;
+  margin-right: 30px;
+}
+
+#bar > li > a {
+  display: block;
+  margin-right: 0;
+  padding: 15px 0;
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  color: #fff;
+  outline: none;
+  font-size: 20px;
+}
+
+#bar > li > a:hover {
+  1color: rgba(255,255,255,.7);
+  opacity: .7;
+}
+
+#bar > li > a.home {
+  background-image: url(owlspace-ccm-1-1.png);
+  background-size: auto 80%;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 55px;
+}
+
+.submenu {
+  background: #fff;
+  margin: 0;
+  position: fixed;
+  top: 50px;
+  z-index: 10000;
+  width: 100vw;
+  left: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 18px 0 26px 0;
+  display: none;
+}
+.submenu ul.submenu-ul li a {
+  padding: 10px 0 10px 25px;
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 17px;
+  color: #777;
+  -webkit-transition: color .25s;
+  transition: color .25s;
+}
+.submenu ul.submenu-ul li a:hover {
+  color: red;
+}
+.submenu ul.submenu-ul li a span {
+  font-size: 16px;
+}
+/* Стили для 2-ой категории */
+.submenu ul.submenu-ul > li > ul > li > a {
+  color: green;
+}
+.submenu .submenu-ul {
+  list-style: none;
+/* 4 колонки column-count: 4; */
+  column-count: 4;
+  column-gap: 0;
+  width: 1160px;
+  margin: 0 auto;
+}
+/* .center1 {
+  text-align: center;
+} */
+.no-js .menu:hover .submenu,
+.menu-hover:hover .submenu,
+.menu-click.menu-active .submenu {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.submenu li:last-child {
+  border-bottom: none;
+}
+.submenu a {
+  color: #777;
+  display: inline-block;
+  line-height: 1.2em;
+  padding: 5px 0;
+  text-decoration: none;
+}
+.submenu a:hover {
+   color: #3F5883; 
+}
+.menu-right .submenu:before,
+.menu-right .submenu::before {
+  left: auto;
+  right: 24px;
+}
+/* крестик в правом верхнем углу в раскрытом меню*/
+.close1 {
+  margin: 8px 50px 0 0;
+  float: right;
+  width: 18px;
+  height: 18px;
+  background-image: url(close.png);
+  background-size: 100%;
+}

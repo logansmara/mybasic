@@ -1,0 +1,42 @@
+#slider1 {
+    position: relative;
+}
+
+#slider2 {
+    position: relative;
+    margin: 60px 0 30px 0;
+}
+
+.strelka1, .strelka2 {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: auto;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    color: #999;
+}
+
+.prev1 {
+    left: 0;
+    height: 40px;
+}
+
+.next1 {
+    right: 0;
+    height: 40px;
+}
+
+.prev2 {
+    left: 0;
+    height: 30px;
+}
+
+.next2 {
+    right: 0;
+    height: 30px;
+}
+.sl2 {
+    margin: 0 10px;
+}
